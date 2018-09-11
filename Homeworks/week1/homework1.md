@@ -1,3 +1,5 @@
+Homework 1: Learning from Ping and ICMP (Due 9/16 23:59)
+
 Q1. What are two advantages and two disadvantages of having international standards for network protocols? 
 
 
