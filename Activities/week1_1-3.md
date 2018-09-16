@@ -25,11 +25,18 @@ Find out the following details:
 ---
 *Answer:* 
 
-- 159.65.37.60
-- No, got classic50.allwebnow.com instead. This must be the domain pointer for abracadabra.com
-- primary server: 192.168.2.100
-- The website does not have an authoritative name server.
-- 
+1) 159.65.37.60
+2) No, got classic50.allwebnow.com instead. This must be the domain pointer for abracadabra.com
+3) primary server: ns1.allwebnow.com
+4) Authoritative name servers:
+    - ns1.allwebnow.com
+    - ns2.allwebnow.com
+    - ns3.allwebnow.com
+    - ns4.allwebnow.com
+5) Yes, there are multiple authoritative name servers. This is to ensure failovers, such that the domain is still functions even with one more more servers down at a time, due to overloading or other reasons.
+6) ASN is AS14061
+7) Email gateway: systemnotifications.preciselymanaged.com 
+8) None available
 
 
 -----------------------------------------------

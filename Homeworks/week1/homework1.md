@@ -4,12 +4,12 @@
 
 **Q1. What are two advantages and two disadvantages of having international standards for network protocols?** 
 
-Advantages:
+Advantages: <br>
 1. All computers throughout the world can be connected together due to the use of a single standard. 
 
 2. Easily maintained by changing the standard, which will cause the inter-connected computers to install the update and change accordingly.
 
-Disadvantages:
+Disadvantages: <br>
 1. A bug or vulnerability in the standard will result in an international problem instead of being confined to a nation's borders.
 
 2. All companies must adhere to and use the standard instead of developing new methods.
@@ -26,11 +26,13 @@ Therefore 72 bytes will be used.
 ---
 **Q2b. Assume that with additional ping arguments the ICMP payload becomes the maximum MTU size at IP layer (1500bytes), What is the ICMP payload size? What is the size of the frame transmitted on the wire?**
 
-Since maximum ICMP payload size is 1472 bytes, it will be split into 2 payloads of size 1468 bytes and size 32 bytes respectively.
- - ICMP payload size: 1468 bytes, 32 bytes.
+ICMP payload size = MTU - ICMP Header - IP Header <br>
+  = 1500 - 8 - 20
+  = 1472 bytes.
 
-Since the maximum MTU size for the ethernet is 1500 bytes:
- - Size of the frame transmitted on wire: 1500 bytes
+Size of frame = Ethernet header + IP Header + ICMP Header + payload size <br>
+    = 14 + 1500 (MTU)
+    = 1514
  
 ---
 **Q2c. Try to verify your calculations using wireshark.**  
@@ -38,5 +40,14 @@ Since the maximum MTU size for the ethernet is 1500 bytes:
 Wireshark: 
 
 ---
+
+Steps: 
+1) ping -l 1472 192.168.1.1 
+2) Display by wireshark showing ICMP packets captured.
+
+From wireshark, it can be seen that length of each packet is indeed 1514.
+
+
+
 
 Ref: http://www.hackingarticles.in/understanding-guide-icmp-protocol-wireshark/
