@@ -42,7 +42,7 @@ Wireshark:
 ---
 
 Steps: 
-1) ping -l 1472 192.168.1.1 
+1) ping -l 1472 192.168.86.1 
 2) Display by wireshark showing ICMP packets captured.
 
 From wireshark, it can be seen that length of each packet is indeed 1514.
