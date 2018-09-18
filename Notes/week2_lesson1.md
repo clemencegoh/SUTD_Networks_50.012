@@ -58,4 +58,3 @@ BitTorrent:
 any one machine)
     - This causes the paired machines to become each other's 
     "top 4 providers"
--     
