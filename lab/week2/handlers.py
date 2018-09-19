@@ -97,7 +97,12 @@ def deleteImage(userID, imageName):
     name = parseImageName(imageName)
     data = getAllUserData()
     data[userID]["Images"].remove(name)
+
+    # update database
     write_to_db(data)
+
+    # remove from system
+    os.remove(imagePath(imageName))
 
 
 # print(createNewUser("Clems","120005"))
