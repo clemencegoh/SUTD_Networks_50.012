@@ -6,7 +6,17 @@ app = Flask(__name__, static_url_path='/static')
 
 ##########
 # Image storage app
+# Done by:
+# Clemence (1002075)
+# Yuhui (1002489)
 ##########
+# Note that to use this, a project structure as follows is required:
+# root
+#   - static
+#       - images
+##########
+
+
 
 # This app accepts an image and stores it, returning unique ID for each image uploaded
 

@@ -1,7 +1,6 @@
 import json
 import os
 import random
-import re
 
 def generateRandomString(_length):
     alphaLower = "abcdefghijklmnopqrstuvwxyz"
@@ -124,10 +123,3 @@ def parse_filename(name):
     return name[0:3] + generateRandomString(2) + ext
 
 
-# print(parse_filename("clemence i_s @ c1@s5-noW!.img"))
-
-# print(createNewUser("Clemence","9876"))
-# deleteUserHandler("Anot90")
-
-# deleteImage("User01", "charm.jpg")
-# addImage("User01","Nigj7.jpg")
