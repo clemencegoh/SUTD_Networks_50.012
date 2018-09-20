@@ -1,6 +1,7 @@
 import json
 import os
 import random
+import re
 
 def generateRandomString(_length):
     alphaLower = "abcdefghijklmnopqrstuvwxyz"
@@ -23,8 +24,8 @@ def getAllUserData():
 def getAllUserNames():
     data = getAllUserData()
     namelist = []
-    for _, v in data.items():
-        namelist.append(v['Name'])
+    for k, _ in data.items():
+        namelist.append(k)
 
     return namelist
 
@@ -61,7 +62,7 @@ def checkAuth(_id, _auth):
     data = getSpecificUser(_id)
     if data == "" or data['ID'] != _auth:
         return False
-    return False
+    return True
 
 
 def deleteUserHandler(_id):
@@ -80,7 +81,7 @@ def imageFilepath():
 
 
 def imagePath(_image):
-    return os.path.join(imageFilepath(), _image + ".jpg")
+    return os.path.join(imageFilepath(), _image)
 
 
 def parseImageName(_name):
@@ -88,22 +89,45 @@ def parseImageName(_name):
 
 
 def addImage(userID, imageName):
-    name = parseImageName(imageName)
     data = getAllUserData()
-    data[userID]["Images"].append(name)
+    data[userID]["Images"].append(imageName)
     write_to_db(data)
 
 def deleteImage(userID, imageName):
-    name = parseImageName(imageName)
     data = getAllUserData()
-    data[userID]["Images"].remove(name)
 
-    # update database
-    write_to_db(data)
+    try:
+        data[userID]["Images"].remove(imageName)
 
-    # remove from system
-    os.remove(imagePath(imageName))
+        # update database
+        write_to_db(data)
+
+        # remove from system
+        os.remove(imagePath(imageName))
+
+        return True
+    except:
+        print("Not found in database")
+        return False
 
 
-# print(createNewUser("Clems","120005"))
+def create_new_folder(local_dir):
+    newpath = local_dir
+    if not os.path.exists(newpath):
+        os.makedirs(newpath)
+    return newpath
+
+
+def parse_filename(name):
+    name = ''.join(e for e in name if e.isalnum())
+    ext = "." + name[len(name)-3:]
+    return name[0:3] + generateRandomString(2) + ext
+
+
+# print(parse_filename("clemence i_s @ c1@s5-noW!.img"))
+
+# print(createNewUser("Clemence","9876"))
 # deleteUserHandler("Anot90")
+
+# deleteImage("User01", "charm.jpg")
+# addImage("User01","Nigj7.jpg")

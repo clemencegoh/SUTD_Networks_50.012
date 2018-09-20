@@ -1,4 +1,5 @@
-from flask import Flask, request, abort, send_file
+from flask import Flask, request, abort, send_file, send_from_directory
+import os
 from handlers import *
 
 app = Flask(__name__, static_url_path='/static')
@@ -63,19 +64,13 @@ def delete_user(id, auth):
     return ""
 
 
-# GET /images/download/{id}
-# returns image with that id for download
-@app.route('/images/download/<id>', methods=['GET'])
-def download_specific_image(id):
-    filename = imagePath(id)
-    return send_file(filename, mimetype='image/gif')
-
-
 # GET /images/{id}
 # displays an image from its ID
 @app.route('/images/<id>', methods=['GET'])
 def display_specific_image(id):
-    return "<img src='/static/images/{}.jpg'>".format(id)
+    filename = imagePath(id)
+    return send_file(filename, mimetype='image/gif')
+    # return "<img src='/static/images/{}.jpg'>".format(id)
 
 
 # POST /images
@@ -83,13 +78,6 @@ def display_specific_image(id):
 # Requires user, auth
 @app.route('/images', methods=['POST'])
 def upload_image():
-    print(request)
-
-    print(request.args)
-
-    return ""
-
-
     formData = request.form
     if len(formData) == 0:
         abort(400, "Empty form values")
@@ -98,18 +86,29 @@ def upload_image():
     if len(image) == 0:
         abort(400, "Empty image")
 
-    print(image[0])
+
+    # debug
+    print(image)
+    print(formData)
+
 
     userID = formData.get('UserID')
     auth = formData.get('Auth')
 
+
     if not checkAuth(_id=userID, _auth=auth):
         abort(400, "Auth failed")
 
-    # execute the task
-    addImage(userID, image[0])
+    # add image to db
+    img = request.files['Photo']
+    imgName = parse_filename(img.filename)
+    addImage(userID, imgName)
 
-    return ""
+    # download from user
+    saved_path = imagePath(imgName)
+    img.save(saved_path)
+
+    return imgName
 
 
 # GET image upload UI
@@ -126,8 +125,9 @@ def delete_Image(user_id, image_id, auth):
     if not checkAuth(user_id, auth):
         abort(400, "Invalid authentication")
 
-    deleteImage(user_id, image_id)
-    return ""
+    if deleteImage(user_id, image_id):
+        return ""
+    abort(400, "Image not in user's database")
 
 
 if __name__=='__main__':
