@@ -8,5 +8,5 @@ def documentInFile(filename, title, content):
         write_mode = 'w'
     
     f = open(filename, write_mode)
-    f.write(title + ": " + str(content) + "\n")
+    f.write(title + ": " + str(content) + "\n\n")
     f.close()
