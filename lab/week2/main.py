@@ -96,12 +96,6 @@ def upload_image():
     if len(image) == 0:
         abort(400, "Empty image")
 
-
-    # debug
-    print(image)
-    print(formData)
-
-
     userID = formData.get('UserID')
     auth = formData.get('Auth')
 

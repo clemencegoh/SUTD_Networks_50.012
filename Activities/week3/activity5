@@ -1,0 +1,15 @@
+1. 5 packets max
+
+3. Remaining packets are not acknowledged, and are discarded.
+
+4. Window advances. All packets have been acknowledged.
+Receiver does not have to acknowledge every packet, only the last one.
+
+5. Selective repeat sends all within the window, then only resends
+request for packets which did not get an ack within the timeout.
+The window moves forward only when the first packet in that window
+has been received. There are unnecessary retransmissions when ack is killed.
+
+6. Both uses the "window" concept which allows for re-assembly of
+data packets to send to the upper layer in its proper order.
+This is due to the window not moving so long as the first packet is not received.

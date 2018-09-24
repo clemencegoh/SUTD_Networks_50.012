@@ -26,4 +26,4 @@ def DeleteImage(_uid, _imageID, _auth):
 
 
 if __name__=='__main__':
-    pass
+    CreateNewUser("yuhui123", "10000")
