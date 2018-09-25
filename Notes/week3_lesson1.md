@@ -67,7 +67,9 @@ Essential
     - Sending multiple packets to fill the pipeline
     - No need to wait for first ack before waiting for next
 
-
+- Types of implementation:
+    - Go-back-N
+    - Selective repeat
 
         
 
