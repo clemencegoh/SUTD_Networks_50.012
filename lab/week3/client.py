@@ -47,7 +47,7 @@ def createPayload(_message, _ID):
     }
 
 
-def clientSide(_rate=None):
+def clientSide(_rate=None, _missing_numbers=[]):
     rate = commandLineArgs(_rate)
     host_name = "localhost"
     port_number = 5555
@@ -55,8 +55,6 @@ def clientSide(_rate=None):
     sock = S.socket(S.AF_INET, S.SOCK_DGRAM)
     server_address = (host_name, port_number)
 
-    # number to be missed
-    missing_numbers = [12, 18, 21, 30]
     # number of data to be sent
     max_number = int(rate * 1000)
     total_data = 0
@@ -66,7 +64,7 @@ def clientSide(_rate=None):
 
     # client-side counting
     for i in range(max_number):
-        if i not in missing_numbers:
+        if i not in _missing_numbers:
             message = createPayload(generateRandomString(12), i)
 
             # print("Sent with Payload: {} \nID: {}".format(message, message["ID"]))
@@ -89,5 +87,5 @@ def clientSide(_rate=None):
 
 
 if __name__=="__main__":
-    clientSide()
+    clientSide(_rate=1, _missing_numbers=[2, 6, 12])
 
