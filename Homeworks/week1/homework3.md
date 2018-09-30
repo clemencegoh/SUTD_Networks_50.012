@@ -21,7 +21,7 @@ After the 25th transmission round, segment loss is detected by timeout.
    
 •  Assuming packet loss is detected after the 30th round, by receipt of a triple duplicate ack, what will be the values of the congestion window size and of ssthresh?
    - cwnd size: 8 segments
-   - ssthresh: 4 segments
+   - ssthresh: 8 segments
    
 •  Suppose TCP Tahoe is used (instead of TCP Reno), and assume that triple duplicate ACKs are received at the 20th round.  What are the ssthresh and congestion window size at the 23rd round?
    - ssthresh: 22 segments 
