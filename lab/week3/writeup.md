@@ -26,13 +26,13 @@ Please provide the figures for the first experiment (with qlen 100 and only one 
 - Please comment on what you can see in the figures 
 
 Buffer occupancy:
-![alt text](./images/Expt_1_queue.png)
+![experiment 1 queue](./images/Expt_1_queue.png)
 
 Cwnd for long-lived iperf flow:
-![alt text](./images/Expt_1_tcp_cwnd_iperf.png)
+![experiment 1 iperf](./images/Expt_1_tcp_cwnd_iperf.png)
 
 Cwnd for short-lived wget flow:
-![alt text](./images/Expt_1_tcp_cwnd_wget.png)
+![experiment 1 wget](./images/Expt_1_tcp_cwnd_wget.png)
 
 For the first ~88 seconds, only the long-lived iperf flow is active.
 It increases exponentially from 15-16s, where it encountered its first packet loss event.
@@ -49,13 +49,13 @@ Please provide the figures for the second experiment (with qlen 20 and only one 
 
 
 Buffer occupancy:
-![alt text](./images/Expt_3_queue.png)
+![experiment 3 queue](./images/Expt_3_queue.png)
 
 Cwnd for long-lived iperf flow:
-![alt text](./images/Expt_3_tcp_cwnd_iperf.png)
+![experiment 3 iperf](./images/Expt_3_tcp_cwnd_iperf.png)
 
 Cwnd for short-lived wget flow:
-![alt text](./images/Expt_3_tcp_cwnd_wget.png)
+![experiment 3 wget](./images/Expt_3_tcp_cwnd_wget.png)
 
 For the first 45 seconds, only the long-lived iperf flow is active.
 Similar to the previous experiment, a slow start is observed,
