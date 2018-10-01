@@ -38,3 +38,15 @@ until congestion is detected
 until a loss is reached, set ssthresh = 1/2 cwnd
 
 
+**CONGESTION IS A NETWORK ISSUE**
+- 2 ways to handle:
+    - end-to-end 
+        - both parties recognise segment loss
+        - both reduce rate
+        - done in TCP
+    - network-assisted
+        - congested router notifies sender or receipient
+        - TCP Explicit Congestion Notification (ECN)
+        does exactly the point above
+        - Router sets flag in IP header if link congested
+        

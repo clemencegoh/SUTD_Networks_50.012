@@ -1,14 +1,34 @@
 # Week 2 lesson 1
 # The Application Layer
 
-=> Uses transfer protocols <br>
-=> Examples of application layer protocols:
+Relies on lower layers to provide routing,
+error correction, etc.
+
+---
+Examples of application layer protocols:
 - SMTP
 - Transport Layer Security (TLS)
 - Domain Name Service (DNS)
 - Secure Shell (SSH)
 - Telnet (Teletype Network)
+- Skype traffic for audio and video chat
 
+---
+Sockets
+- Object that you can read/write/listen on
+- IP address with port is known as a socket.
+- Endpoint used for communication flow between 
+2 programs over a network.
+- Applications create the socket with 
+lower layer information.
+
+In-Betweens:
+- TLS (Application layer)
+    - Used to provide msg authentication,
+    confidentiality and integrity
+    - Used to improve security of app layer
+    protocols
+- TCP (Transport layer)
 
 ---
 - Segmentation and Reassembly

@@ -1,5 +1,9 @@
 # The Transport layer
 
+**MAX PORTS**: (0-65535)
+- ports are 16 bits long
+
+---
 Two protocols are used for almost everything.
 - UDP
 - TCP
@@ -28,6 +32,10 @@ UDP - User Datagram Protocol
 - UDP header only introduces 8 bytes of overhead to any payload message
 - Reliable transfer of over 98%
 - However of those only 50% arrived in order
+- Connectionless, sender does not need to perform any
+handshakes with receiver
+- Connection-based protocols cannot easily or at all be used
+for broadcasting
 
 ---
 Connections 
