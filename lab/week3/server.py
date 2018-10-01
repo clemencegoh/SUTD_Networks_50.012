@@ -2,10 +2,22 @@
 Networks Lab 3: UDP Socket Programming
 
 Server code.
+
+By:
+Clemence Goh (1002075)
+Cheryl Goh (1002421)
 """
 
 import socket as S
 import json
+
+
+def getMissingNumbers(_all_data, _last_number):
+    to_return = []
+    for i in range(int(_last_number)):
+        if i not in _all_data:
+            to_return.append(i)
+    return to_return
 
 
 def serverSide():
@@ -14,7 +26,7 @@ def serverSide():
 
     # sever side counting of objects
     serverCounter = -1
-    missed_data = []
+    all_data = {}
 
     while True:
         serverCounter += 1
@@ -24,16 +36,13 @@ def serverSide():
         if data["Payload"] == "End":
             break
 
-        if serverCounter != data["ID"]:
-            # print("WARNING: ID {} not received\n\n".format(serverCounter))
-            missed_data.append("ID: {}".format(serverCounter))
-
-            # skip count
-            serverCounter += 1
+        all_data[data["ID"]] = 1
 
         # debugger
         # print("Payload: {} \nID: {} \nAddresses: {} \n\n".
         #       format(data["Payload"], data["ID"], addrs))
+
+    missed_data = getMissingNumbers(all_data, data["ID"])
 
     print("--------- Report ---------")
     print("Total expected:", data["ID"])

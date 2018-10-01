@@ -2,24 +2,16 @@
 Networks Lab 3: UDP Socket Programming
 
 Client code.
+
+By:
+Clemence Goh (1002075)
+Cheryl Goh (1002421)
 """
 
 import socket as S
 import argparse
 import json
-import random
 import time
-
-def generateRandomString(_length):
-    alphaLower = "abcdefghijklmnopqrstuvwxyz"
-    alphaUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    numString = "1234567890"
-    allPossible = alphaLower + alphaUpper + numString
-
-    toReturn = ""
-    for i in range(_length):
-        toReturn += random.choice(allPossible)
-    return toReturn
 
 
 def commandLineArgs(_rate):
@@ -47,10 +39,12 @@ def createPayload(_message, _ID):
     }
 
 
-def clientSide(_rate=None, _missing_numbers=[]):
+def clientSide(_rate=None):
     rate = commandLineArgs(_rate)
     host_name = "localhost"
     port_number = 5555
+
+    _missing_numbers = [1650]  # after 1.65 Mbps, start dropping
 
     sock = S.socket(S.AF_INET, S.SOCK_DGRAM)
     server_address = (host_name, port_number)
@@ -65,7 +59,9 @@ def clientSide(_rate=None, _missing_numbers=[]):
     # client-side counting
     for i in range(max_number):
         if i not in _missing_numbers:
-            message = createPayload(generateRandomString(12), i)
+            message = createPayload(
+                "This is a message from the client",
+                i)
 
             # print("Sent with Payload: {} \nID: {}".format(message, message["ID"]))
             total_data += sock.sendto(json.dumps(message).encode(), server_address)
@@ -83,9 +79,6 @@ def clientSide(_rate=None, _missing_numbers=[]):
     print("------- End Report --------")
 
 
-
-
-
-if __name__=="__main__":
-    clientSide(_rate=1, _missing_numbers=[2, 6, 12])
+if __name__ == "__main__":
+    clientSide(_rate=2.0)
 
