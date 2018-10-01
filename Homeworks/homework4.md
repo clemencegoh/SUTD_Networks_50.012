@@ -13,12 +13,14 @@ Default Eth3
 For each of the four interfaces, give the associated range of destination host addresses and the number of addresses in the range.
 
 ---
-1)  Assuming 
-a) 212.x.x.x
-b) 220.x.x.x
-c) 244.x.x.x
-d) everything else
+1)  
 
+| Ethernet | range | number of addresses | comments |
+| --- | --- | ---| --- |
+| Eth0 | 1100 0000 0000 0000 - 1100 1111 1111 1111 | 1024 | Eth0 has 2^12 addresses, but 2^11 are dedicated to eth1, bringing total to 2^11 instead|
+| Eth1 | 1100 1000 0000 0000 - 1100 1111 1111 1111 | 1024 | Eth1 has full range of 2^11 addresses |
+| Eth2 | 1110 0000 0000 0000 - 1111 1111 1111 1111 | 8192 | Eth2 has 2^13 addresses
+| Default | 0000 0000 0000 0000 - 1111 1111 1111 1111 | 55296 | default covers everything else, 2^16 - 2^13 - 2048
 
 
 ---
