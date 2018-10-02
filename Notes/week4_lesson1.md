@@ -44,3 +44,4 @@ When considering subnet addresses:
     - 0 is used to address entire subnet
     - 255 is used as a broadcast
 
+Autonomous Systems (AS)
