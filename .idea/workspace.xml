@@ -2,21 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a91dd44-ed70-475b-af7e-2e9a86289bb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lectures/Ethernet-Roadmap-2sides-Final-27April.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lectures/Lec11 - The Physical Layer.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lectures/List of AcronymsV3.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lectures/MidTermReview_Networks.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lectures/midtermFall2016-solutions.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lectures/midtermFall2017-solution.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/images/Star_Topology.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/images/bus_topology.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/images/mesh_topology.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/images/ring_topology.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/images/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/week8_lesson1.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab/week5/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab/week5/writeup.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/images/types_of_cast.JPG" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab/week5/wireshark.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab/week5/writeup_lab5.pdf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/week8_lesson2.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Notes/week8_lesson1.md" afterPath="$PROJECT_DIR$/Notes/week8_lesson1.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lab/week5/writeup.md" afterPath="$PROJECT_DIR$/lab/week5/writeup.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,25 +19,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="writeup.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="writeup.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lab/week5/writeup.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="44">
-                <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="week8_lesson1.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Notes/week8_lesson1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="454">
-                <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <first_editor relative-caret-position="1048">
+                <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -117,16 +96,16 @@
         <option value="$PROJECT_DIR$/lab/week4/writeup.md" />
         <option value="$PROJECT_DIR$/lab/week4/convert_file.sh" />
         <option value="$PROJECT_DIR$/Notes/week5_lesson1.md" />
-        <option value="$PROJECT_DIR$/lab/week5/writeup.md" />
         <option value="$PROJECT_DIR$/Notes/week8_lesson1.md" />
+        <option value="$PROJECT_DIR$/Notes/week8_lesson2.md" />
+        <option value="$PROJECT_DIR$/lab/week5/writeup.md" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="x" value="952" />
+    <option name="width" value="976" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -143,8 +122,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -155,18 +132,20 @@
             <path>
               <item name="SUTD_Networks_50.012" type="b2602c69:ProjectViewProjectNode" />
               <item name="SUTD_Networks_50.012" type="462c0819:PsiDirectoryNode" />
-              <item name="Notes" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SUTD_Networks_50.012" type="b2602c69:ProjectViewProjectNode" />
               <item name="SUTD_Networks_50.012" type="462c0819:PsiDirectoryNode" />
-              <item name="Notes" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+              <item name="week5" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -175,19 +154,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Notes\images" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Lectures" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week4\images" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week4" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week3" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week4" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week3\images" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week3" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week2\toSubmit" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week2\example_calls" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week5" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Notes\images" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Lectures" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week4\images" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week4" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -331,7 +310,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28701594" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18635875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19172932" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -357,16 +336,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Activities/generated/wk2_NoAuth.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="198">
-            <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Activities/util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -686,22 +655,33 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lab/week5/writeup.md">
+    <entry file="file://$PROJECT_DIR$/Notes/week8_lesson1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="44">
-            <caret line="2" column="28" lean-forward="true" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+          <first_editor relative-caret-position="388">
+            <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
             <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/week8_lesson1.md">
+    <entry file="file://$PROJECT_DIR$/Notes/week8_lesson2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="454">
-            <caret line="83" column="0" lean-forward="true" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+          <first_editor relative-caret-position="520">
+            <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab/week5/writeup.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1048">
+            <caret line="49" column="4" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
             <folding />
           </first_editor>
           <second_editor />

@@ -81,7 +81,10 @@ Embedded System Networks
 - CAN(Controller Area Network) bus: 1 Master & 16 Slaves, cheap.
     - Check slide 45 for comparison reference
 
-
+- Broadband: analogue
+    - frequency division multiplexes
+- Baseband: digital
+    - time division multiplexes
 
 
 
