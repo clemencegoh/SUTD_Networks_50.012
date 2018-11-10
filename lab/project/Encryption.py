@@ -68,37 +68,6 @@ class AesKey:
     def _unpad(s):
         return s[:-ord(s[len(s)-1:])]
 
-if __name__ == "__main__":
-    # RSA Demonstration
-    # Generate new key pair
-    ks1 = RsaKey()
-    publicKey = ks1.getPublicKey()
-    
-    # Generate keys using exising public key
-    ks2 = RsaKey(publicKey)
-    
-    # Encryption
-    msg = ks2.encrypt(b"RSA Test message")
-    
-    # Decryption
-    msg = ks1.decrypt(msg)
-    print(msg)
-    
-    # AES Demonstration
-    # Generate new keys
-    ks3 = AesKey()
-    key = ks3.getKey()
-    
-    # Generate key from exising symmetric key
-    ks4 = AesKey(key)
-    
-    # Encryption
-    msg = ks3.encrypt(b"AES Test message")
-    
-    # Decryption
-    msg = ks4.decrypt(msg)
-    print(msg)
-    
     
     
     
