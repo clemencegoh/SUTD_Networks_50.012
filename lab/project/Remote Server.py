@@ -1,6 +1,6 @@
 
 # coding: utf-8
-
+import time
 import socket
 import config
 from Encryption import RsaKey, AesKey
@@ -20,6 +20,7 @@ while True:
     if config.isTest:
         addr = (config.VPNHost, addr[1])
     print ("Connection from: " + str(addr))
+    starttime = time.time()
     msg = c.recv(1024)
     if msg == b'Exchange Public Key':
         print('Exchanging public keys')
@@ -55,19 +56,20 @@ while True:
         
         # Handles message, e.g. by routing unencrypted payload to internal network and getting reply
         print("Handling message {} from remote client".format(msg))
-        pass
         
         # Sends reply to client
         msg = "This is a message to the client"
         print("Sending the reply '{}' to remote client".format(msg))
         msg = IpToAesDic[clientHost].encrypt(bytes(msg,'utf-8')).decode("utf-8")
-        msg = IpToAesDic[addr[0]].encrypt('{}/{}/{}'.format(clientHost,clientPort,msg))
+        msg = IpToAesDic[addr[0]].encrypt('{}/{}/{}'.format(clientHost, clientPort, msg))
         
-        VPN = (config.VPNHost,config.VPNPort)
+        VPN = (config.VPNHost, config.VPNPort)
         v = socket.socket()
         v.connect(VPN)
         v.send(msg)
         v.close()
+    endtime = time.time()
+    print("Time taken:", endtime - starttime)
     c.close()
     
 
