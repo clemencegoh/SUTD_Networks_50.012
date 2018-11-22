@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a91dd44-ed70-475b-af7e-2e9a86289bb7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lectures/Lec 18 - QoS.pdf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Homeworks/homework9.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Notes/week11_lesson2.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab/week11/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lab/week11/clientSkeleton.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,41 +15,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="week11_lesson1.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Notes/week11_lesson1.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="214">
-                <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="week11_lesson2.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Notes/week11_lesson2.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="380">
-                <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-                <folding />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="homework9.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Homeworks/homework9.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SECOND">
-              <first_editor relative-caret-position="66">
-                <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-                <folding />
-              </first_editor>
-              <second_editor />
+      <file leaf-file-name="clientSkeleton.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lab/week11/clientSkeleton.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="572">
+              <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+              <folding>
+                <element signature="e#209#240#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,7 +47,16 @@
       <find>key</find>
       <find>RsaKey()</find>
       <find>vp</find>
+      <find>subscribe</find>
+      <find>receive</find>
+      <find>queue</find>
+      <find>username</find>
+      <find>client\.</find>
+      <find>soc</find>
     </findStrings>
+    <replaceStrings>
+      <replace>self.client\.</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>D:\desktopStorage\school\SUTD_Networks_50.012\lab\lab2_submission</dir>
     </dirStrings>
@@ -86,9 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Github_Links/testFile.py" />
-        <option value="$PROJECT_DIR$/Activities/generated/wk2_NoAuth.md" />
-        <option value="$PROJECT_DIR$/Activities/generated/wk2_Auth.md" />
         <option value="$PROJECT_DIR$/Activities/week2.py" />
         <option value="$PROJECT_DIR$/lab/week2/example_calls/example.py" />
         <option value="$PROJECT_DIR$/Activities/week3/activity5" />
@@ -137,11 +115,14 @@
         <option value="$PROJECT_DIR$/Notes/week11_lesson1.md" />
         <option value="$PROJECT_DIR$/Notes/week11_lesson2.md" />
         <option value="$PROJECT_DIR$/Homeworks/homework9.md" />
+        <option value="$PROJECT_DIR$/lab/clientSkeleton.py" />
+        <option value="$PROJECT_DIR$/lab/week11/subscribe.py" />
+        <option value="$PROJECT_DIR$/lab/week11/clientSkeleton.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="952" />
     <option name="width" value="976" />
     <option name="height" value="1038" />
   </component>
@@ -160,6 +141,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,12 +152,13 @@
             <path>
               <item name="SUTD_Networks_50.012" type="b2602c69:ProjectViewProjectNode" />
               <item name="SUTD_Networks_50.012" type="462c0819:PsiDirectoryNode" />
-              <item name="Homeworks" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SUTD_Networks_50.012" type="b2602c69:ProjectViewProjectNode" />
               <item name="SUTD_Networks_50.012" type="462c0819:PsiDirectoryNode" />
-              <item name="Lectures" type="462c0819:PsiDirectoryNode" />
+              <item name="lab" type="462c0819:PsiDirectoryNode" />
+              <item name="week11" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SUTD_Networks_50.012" type="b2602c69:ProjectViewProjectNode" />
@@ -186,7 +169,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -196,19 +178,19 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Lectures" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Notes\images" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Homeworks" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Notes" />
-      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\project" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week4" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week3\images" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week3" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week2\toSubmit" />
       <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week2\example_calls" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week11" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\lab" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Lectures" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Notes\images" />
+      <recent name="D:\desktopStorage\school\SUTD_Networks_50.012\Homeworks" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -223,7 +205,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.direct_server">
+  <component name="RunManager" selected="Python.clientSkeleton (1)">
     <configuration name="Client" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -258,33 +240,36 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <configuration name="Unittests in Encryption_test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab/project" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="SUTD_Networks_50.012" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/lab/project/Encryption_test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-    </configuration>
-    <configuration name="VPN Server" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="clientSkeleton (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab/project" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab/week11" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="SUTD_Networks_50.012" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab/project/VPN Server.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/lab/week11/clientSkeleton.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <configuration name="clientSkeleton" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/lab" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SUTD_Networks_50.012" />
+      <option name="SCRIPT_NAME" value="D:\desktopStorage\school\SUTD_Networks_50.012\lab\week11\clientSkeleton.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -308,18 +293,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.Remote Server" />
-      <item index="1" class="java.lang.String" itemvalue="Python.VPN Server" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in Encryption_test.py" />
-      <item index="3" class="java.lang.String" itemvalue="Python.Client" />
-      <item index="4" class="java.lang.String" itemvalue="Python.direct_server" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Client" />
+      <item index="2" class="java.lang.String" itemvalue="Python.direct_server" />
+      <item index="3" class="java.lang.String" itemvalue="Python.clientSkeleton" />
+      <item index="4" class="java.lang.String" itemvalue="Python.clientSkeleton (1)" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.direct_server" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Remote Server" />
-        <item index="2" class="java.lang.String" itemvalue="Python.Client" />
-        <item index="3" class="java.lang.String" itemvalue="Python.VPN Server" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in Encryption_test.py" />
+        <item index="0" class="java.lang.String" itemvalue="Python.clientSkeleton (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.clientSkeleton" />
+        <item index="2" class="java.lang.String" itemvalue="Python.direct_server" />
+        <item index="3" class="java.lang.String" itemvalue="Python.Remote Server" />
+        <item index="4" class="java.lang.String" itemvalue="Python.Client" />
       </list>
     </recent_temporary>
   </component>
@@ -351,7 +336,8 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="976" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -360,9 +346,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3735763" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28801844" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28473803" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="FAQ Robot" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2488889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12889366" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Project Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32975295" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Job Explorer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -388,26 +374,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Activities/week4/activity.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="88">
-            <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab/week3/images/Expt_3_tcp_cwnd_iperf.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lab/week3/images/Expt_3_queue.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lab/week3/images/Expt_1_tcp_cwnd_wget.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -765,12 +731,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Notes/week11_lesson1.md">
+    <entry file="file://$PROJECT_DIR$/Homeworks/homework9.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="214">
-            <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-            <folding />
+        <state split_layout="SECOND">
+          <first_editor relative-caret-position="66">
+            <caret line="3" column="3" lean-forward="false" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
@@ -779,22 +744,38 @@
     <entry file="file://$PROJECT_DIR$/Notes/week11_lesson2.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="380">
+          <first_editor relative-caret-position="726">
             <caret line="33" column="40" lean-forward="false" selection-start-line="33" selection-start-column="40" selection-end-line="33" selection-end-column="40" />
-            <folding />
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homeworks/homework9.md">
+    <entry file="file://$PROJECT_DIR$/Notes/week11_lesson1.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SECOND">
-          <first_editor relative-caret-position="66">
-            <caret line="3" column="3" lean-forward="true" selection-start-line="3" selection-start-column="3" selection-end-line="3" selection-end-column="3" />
-            <folding />
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1408">
+            <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab/week11/subscribe.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/paho/mqtt/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-355">
+          <caret line="1340" column="8" lean-forward="false" selection-start-line="1340" selection-start-column="8" selection-end-line="1340" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lab/week11/clientSkeleton.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="60" column="0" lean-forward="true" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
+          <folding>
+            <element signature="e#209#240#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
