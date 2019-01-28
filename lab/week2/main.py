@@ -58,7 +58,7 @@ def user_API(id):
 
 
 # DELETE /user/{id}/{auth}
-# Deletes a user and all corresponding image files
+# Deletes a user and all corresponding image images
 # Requires authentication
 @app.route('/user/<id>/<auth>', methods=['DELETE'])
 def delete_user(id, auth):

@@ -5,7 +5,7 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('--sport', help="Enable the source port filter (Default is dest port)", action='store_true', dest="sport", default=False)
 parser.add_argument('-p', '--port', dest="port", default='5001')
-parser.add_argument('-f', dest="files", nargs='+', required=True)
+parser.add_argument('-f', dest="images", nargs='+', required=True)
 parser.add_argument('-o', '--out', dest="out", default=None)
 parser.add_argument('-H', '--histogram', dest="histogram",
                     help="Plot histogram of sum(cwnd_i)",

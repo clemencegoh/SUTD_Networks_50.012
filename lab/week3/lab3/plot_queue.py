@@ -11,12 +11,12 @@ from pylab import figure
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--files', '-f',
+parser.add_argument('--images', '-f',
                     help="Queue timeseries output to one plot",
                     required=True,
                     action="store",
                     nargs='+',
-                    dest="files")
+                    dest="images")
 
 parser.add_argument('--maxy',
                     help="Max mbps on y-axis..",
@@ -152,7 +152,7 @@ else:
     #if args.legend:
     #    plt.legend(args.legend, loc="upper left")
     #else:
-    #    plt.legend(args.files)
+    #    plt.legend(args.images)
 
 if args.out:
     plt.savefig(args.out)
